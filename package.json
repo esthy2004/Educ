@@ -1,0 +1,17 @@
+{
+  "name": "gestion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EDUFLOW — frontend React et API Express de gestion scolaire",
+  "scripts": {
+    "install:all": "npm install --prefix back && npm install --prefix frontend",
+    "dev:back": "npm run dev --prefix back",
+    "dev:front": "npm run dev --prefix frontend",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "db:logs": "docker compose logs -f db",
+    "typecheck": "npm run typecheck --prefix back && npm run typecheck --prefix frontend",
+    "build": "npm run build --prefix back && npm run build --prefix frontend",
+    "test:api": "node scripts/api-smoke.mjs"
+  }
+}
